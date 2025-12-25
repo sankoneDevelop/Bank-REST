@@ -3,7 +3,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/card_management
+    url: jdbc:postgresql://localhost:5433/card_management
     username: postgres
     password: postgres
     driver-class-name: org.postgresql.Driver
@@ -18,7 +18,7 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQLDialect
 
   liquibase:
-    change-log: classpath:db/migration/master.xml
+    change-log: classpath:db/migration/master.yml
     enabled: true
 
 security:
